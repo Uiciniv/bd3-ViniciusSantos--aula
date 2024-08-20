@@ -5,7 +5,7 @@ const database = 'BD3-VINICIUS-AULA';
 const collection = "Livraria"
 
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
-use(database);
+use(database)
 
-/* CRIAR UMA COLEÇÃO DE DADOS:  */
-db.createCollection(collection);
+/* SELECIONA TODOS OS REGISTROS DA COLEÇÃO: */
+db[collection].find()

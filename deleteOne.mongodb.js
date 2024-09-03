@@ -7,4 +7,6 @@ const collection = "Livraria";
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
 use(database);
 
-db[collection].find({"codigo": "9"});
+db[collection].deleteOne(
+    {codigo:'9'}
+);

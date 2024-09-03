@@ -7,4 +7,8 @@ const collection = "Livraria";
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
 use(database);
 
-db[collection].find({"codigo": "9"});
+/* ALTERA DADOS DE UM DOCUMENTOS DA COLLECTION */
+db[collection].updateMany(
+    {autor: 'J.R.R Tolkien'},
+    { $set:{autor:'John Ronald Reuel Tolkien'} }
+);
